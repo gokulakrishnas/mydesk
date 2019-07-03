@@ -1,0 +1,54 @@
+<router-outlet></router-outlet>
+<html>
+<head>
+  
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  <div align="center" >                                    
+    <div class="form">
+      <div class="form-group" [ngClass]="{
+     'has-error':username.invalid&&username.touched,
+     'has-success':username.valid&&username.touched,
+     'has-error':password.invalid&&password.touched,
+     'has-success':password.valid&&password.touched
+     }">
+        <mat-card style="width:300px;height:400px;margin-top:55px;padding:35px">
+          <mat-icon class="rank">account_circle</mat-icon>
+          <mat-card-content>
+            <form class="example-form">
+              <table class="example-full-width">
+                <tr>
+                  <td>
+                    <br /><br /><br /><br />
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Username" required [(ngModel)]="userslist.UserName" name="username" #username="ngModel">
+
+                    </mat-form-field>
+                    <span class="" style="color:red" *ngIf="username.invalid&&username.touched">Username is Required</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Password" required [(ngModel)]="userslist.PassWord" name="password" #password="ngModel">
+
+                    </mat-form-field>
+                    <span style="color:red" *ngIf="password.invalid&&password.touched"> Password is Required</span>
+                  </td>
+                </tr>
+              </table>
+             
+              <button mat-raised-button (click)="Login()" color="primary" >Login</button>
+              
+            </form>
+          </mat-card-content>
+          <p > {{message}}</p>
+        </mat-card>
+      </div>
+      </div></div>
+</body>
+</html>
+
+

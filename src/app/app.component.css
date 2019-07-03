@@ -1,0 +1,90 @@
+.menu
+{
+    padding-left: 25px;
+}
+.menu div{
+    padding-right: 15px
+}
+
+  
+.icon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
+  }
+  .topnav-right
+  {
+    flex: 1 1 auto;
+    text-align: right;
+ float: right;
+   
+    
+  }
+  .side{
+   
+    
+    position: fixed;
+   height: 100%;
+   min-height: 100%;
+   width: 100%;
+   min-width: 100%;
+   
+     
+    
+}
+  .list{
+    width: 1200px;
+    height: 1090px ;
+    padding-top: 100px;
+   
+}
+.sidenav{
+    background-color: #333;
+}
+
+#container {
+    top: 60px !important;
+   }
+   
+   @media(max-width: 599px) {
+     #container {
+       top: 56px !important;
+     }
+   }
+
+   .sidebar-footer {
+    height:100px;
+    position:absolute; /* the footer goes to the bottom */
+    bottom:0;
+    left:0;
+    width:100%
+}
+.matcard {
+    background-color: white;
+    padding-top:19px !important;
+    height: 25px !important;
+    margin-top: -9px !important;
+    margin-right: -6.5px !important;
+    width:100 ! important;
+  }
+  .footer{
+    width: 228px;
+    background-color: #566573;
+    position: fixed; 
+    bottom: 0px;
+    
+    
+    
+   
+  }
+  .version-info {
+    font-size: 8pt;
+    padding: 8px;
+    align-self: flex-end;
+  }
+  .menu{
+    color: red;
+  }
+  

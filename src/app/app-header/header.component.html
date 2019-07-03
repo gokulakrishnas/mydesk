@@ -1,0 +1,54 @@
+<!--<mat-card class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+    
+</mat-card>-->
+
+<mat-card class="matcard">
+    
+        <div class="flex-item" fxLayout="row" fxLayout.xs="Row">
+         <mat-icon style="padding-bottom:5px;font-size:35px">local_parking</mat-icon>  
+         <div fxLayout="row" fxLayout.xs="Row" fxLayoutGap="100%">
+             <span style="font-size:18px;padding-top:5px;padding-left: 15px;font-size:20px">Project</span>
+             <button mat-icon-button id="menu" (click)="toogleNav()" style="height:0px">
+             
+               <mat-icon style=" padding-bottom: 39px;">menu</mat-icon>
+             </button>
+         </div>
+         <div class="topnav-right" fxLayoutGap="1.08%" >
+           <button mat-icon-button (click)="navService.toogleNav(sidenav)" style="height:0px"><mat-icon style="font-size:29px;padding-right:25px;padding-bottom: 25px;">notifications</mat-icon></button>
+           <button mat-icon-button (click)="toogleNav(sidenav)" style="height:0px"><mat-icon style="font-size:29px;padding-bottom: 25px;">exit_to_app</mat-icon></button>
+           <span></span>
+           <span></span>
+           <span></span>
+      </div>
+   
+   
+   </div>
+  
+  
+  </mat-card>
+  <mat-sidenav-container id="container" fullscreen>
+    <mat-sidenav #appDrawer  opened="false" mode="side" class="sidenav">
+        <perfect-scrollbar style="max-width: 600px; max-height: 600px;">
+      <mat-nav-list style="width:260px;" >
+        <app-menu *ngFor="let item of navItems" [item]="item" ></app-menu>
+      </mat-nav-list>
+      </perfect-scrollbar>
+      <div class="footer">
+          <mat-card style="height:10px;" class="footer">
+        <span style="color:white">
+           Project Inc.2019<span style="padding-left:80px">v1.0</span>
+      </span>
+          </mat-card>
+        </div>
+    </mat-sidenav>
+    
+    
+    
+    <div fxFlex></div>
+    
+  </mat-sidenav-container>
+  
+  
+
+
+
